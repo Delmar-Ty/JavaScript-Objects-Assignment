@@ -2,23 +2,15 @@ function Plan(name, price, discountMo) {
     this.name = name;
     this.price = price;
     this.discountMo = discountMo;
-    Plan.prototype.calc = function (disc) {
-        var discount;
-        var total = this.price * 12;
-        var monthly = this.price;
-        var currDate = new Date();
-        var currMo = currDate.getMonth();
-        for (i = 0; i < this.discountMo.length; i++) {
-            if (currMo === this.discountMo[i]) {
-                total = this.price * disc;
-                discount = true;
-            } else {
-                discount = false;
-            }
-        }
-        document.getElementById('monthly').textContent = monthly;
-        document.getElementById('annual').textContent = total;
-        document.getElementById('discount').textContent = discount;
-        document.getElementById('total').textContent = total;
+    Plan.prototype.test = function() {
+        console.log('Getting Called');
     }
+}
+
+var pBasic = new Plan('Basic', '$3.99', [6, 7]);
+var pProfessional = new Plan('Professional', '$5.99', [6, 7, 11]);
+var pUltimate = new Plan('Ultimate', '$9.99', [6, 7]);
+
+function y() {
+    console.log(x);
 }
