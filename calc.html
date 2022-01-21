@@ -13,23 +13,24 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <div class="container bg-warning mt-5" style="min-height: 30rem;">
-        <div class="container my-5 pt-5">
-            <h1 class="card-title text-dark ms-3 p-5 d-inline">Purchase Overview</h1>
+    <div class="container bg-warning" style="min-height: 30rem; width: 50rem;">
+        <div class="container my-5 pt-5 text-center">
+            <h1 class="card-title text-dark p-5 d-inline">Purchase Overview</h1>
             <h1 class="bi bi-cash-coin text-dark d-inline"></h1>
         </div>
         <h2 class="card-text text-dark ms-5 d-inline">Plan:</h2>
         <h2 class="text-success d-inline ms-1">Basic</h2>
-        <div class="row mt-5 ms-5">
-            <ul class="list-group list-group-flush col-3">
-                <li class="list-group-item bg-warning">An item</li>
-                <li class="list-group-item bg-warning">A second item</li>
-                <li class="list-group-item bg-warning">A third item</li>
-                <li class="list-group-item bg-warning">A fourth item</li>
-                <li class="list-group-item bg-warning">And a fifth one</li>
+        <div class="row mt-5 ms-5 justify-content-between">
+            <div class="bi bi-box-seam col-3" style="font-size: 10rem;"></div>
+            <ul class="list-group list-group-flush col-3 me-5 mb-5">
+                <li class="list-group-item bg-warning" id="monthly"></li>
+                <li class="list-group-item bg-warning" id="annually"></li>
+                <li class="list-group-item bg-warning" id="discount"></li>
+                <li class="list-group-item bg-warning" id="total"></li>
             </ul>
         </div>
     </div>
+    <div class="btn-lg btn-success text-center m-auto mt-5" style="width: 50rem;">Proceed To Checkout</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
